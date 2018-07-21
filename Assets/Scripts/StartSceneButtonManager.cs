@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartSceneButtonManager : MonoBehaviour {
 
+    public GameObject htw;
+
     private void Awake()
     {
         Screen.SetResolution(1440, 1080, false);
@@ -15,6 +17,11 @@ public class StartSceneButtonManager : MonoBehaviour {
     }
 
     public void HowToPlayButton() {
-        
+        htw.SetActive(true);
+    }
+
+    public void ExitButton()
+    {
+        htw.SetActive(false);
     }
 }
